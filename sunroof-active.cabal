@@ -1,0 +1,35 @@
+Name:                sunroof-active
+Version:             0.1
+Synopsis:            Animation Language for Sunroof
+Homepage:            https://github.com/ku-fpg/sunroof/
+Bug-reports:         https://github.com/ku-fpg/sunroof/
+License:             BSD3
+License-file:        LICENSE
+Author:              Andrew Gill <andygill@ku.edu>
+Maintainer:          Andrew Gill <andygill@ku.edu>
+Copyright:           (c) 2013 The University of Kansas
+Category:            Web
+Stability:           experimental
+Build-type:          Simple
+Cabal-version:       >= 1.10
+Description:
+  Animation Language for Sunroof
+
+Extra-source-files:
+    README.md
+
+Library
+  Exposed-modules:     Language.Sunroof.Active
+  default-language:    Haskell2010
+  build-depends:       sunroof		>= 0.1,
+                       base             >= 4.3.1 && < 5,
+                       active           >= 0.2,
+                       Boolean          >= 0.2,
+                       newtype          >= 0.2,
+                       vector-space     >= 0.8.6
+
+  GHC-options: -Wall -fno-warn-orphans
+
+source-repository head
+  type:     git
+  location: git://github.com/ku-fpg/sunroof-active.git
