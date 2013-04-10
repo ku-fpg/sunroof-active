@@ -21,7 +21,8 @@ Extra-source-files:
 Library
   Exposed-modules:     Language.Sunroof.Active
   default-language:    Haskell2010
-  build-depends:       sunroof		>= 0.1,
+  build-depends:       sunroof-server	>= 0.1,
+                       sunroof-compiler >= 0.1,
                        base             >= 4.3.1 && < 5,
                        active           >= 0.2,
                        Boolean          >= 0.2,
